@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>编组 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#6CCCB7" offset="0%"></stop>
+            <stop stop-color="#3A9D80" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="生产制造-选择巡检类型与时间" transform="translate(-45.000000, -364.000000)">
+            <g id="编组-3" transform="translate(15.000000, 214.000000)">
+                <g id="编组-8" transform="translate(15.000000, 142.000000)">
+                    <g id="编组-9" transform="translate(15.000000, 8.000000)">
+                        <circle id="椭圆形" fill="url(#linearGradient-1)" cx="10" cy="10" r="10"></circle>
+                        <path d="M9.39499417,4.20048587 L4.99499985,7.19440872 C4.66499995,7.40826107 4.5,7.72903896 4.5,8.04981686 L4.5,13.9307408 C4.5,14.5188332 4.99499985,15 5.59999923,15 L14.4000008,15 C15.0050002,15 15.5,14.5188332 15.5,13.9307408 L15.5,8.04981686 C15.5,7.67557556 15.3350001,7.35479767 15.0050002,7.19440872 L10.6050058,4.20048587 C10.2750059,3.93317138 9.72500567,3.93317138 9.39500577,4.20048587 L9.39499417,4.20048587 Z M13.2999887,12.8614891 L11.099985,12.8614891 C10.7699852,12.8614891 10.5499848,12.6476367 10.5499848,12.3268588 C10.5499848,12.0060809 10.7699852,11.7922286 11.099985,11.7922286 L13.2999887,11.7922286 C13.6299886,11.7922286 13.8499889,12.0060809 13.8499889,12.3268588 C13.8499889,12.6476367 13.6299886,12.8614891 13.2999887,12.8614891 Z" id="形状" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

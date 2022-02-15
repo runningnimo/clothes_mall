@@ -1,32 +1,61 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <TabBar>
+      <TabBarItem>
+        <img slot="item_icon" src="~assets/images/tabbar/01.png" alt="" />
+        <img
+          slot="item_icon_active"
+          src="~assets/images/tabbar/02.png"
+          alt=""
+        />
+        <div slot="item_text">首页</div>
+      </TabBarItem>
+      <TabBarItem>
+        <img slot="item_icon" src="~assets/images/tabbar/03.png" alt="" />
+        <img
+          slot="item_icon_active"
+          src="~assets/images/tabbar/04.png"
+          alt=""
+        />
+        <div slot="item_text">分类</div>
+      </TabBarItem>
+      <TabBarItem>
+        <img slot="item_icon" src="~assets/images/tabbar/05.png" alt="" />
+        <img
+          slot="item_icon_active"
+          src="~assets/images/tabbar/06.svg"
+          alt=""
+        />
+        <div slot="item_text">购物车</div>
+      </TabBarItem>
+      <TabBarItem>
+        <img slot="item_icon" src="~assets/images/tabbar/07.gif" alt="" />
+        <img
+          slot="item_icon_active"
+          src="~assets/images/tabbar/08.svg"
+          alt=""
+        />
+        <div slot="item_text">我的</div>
+      </TabBarItem>
+    </TabBar>
   </div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import TabBar from 'components/tabbar/TabBar.vue'
+import TabBarItem from 'components/tabbar/TabBarItem.vue'
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+export default {
+  name: 'App',
+  components: {
+    TabBar,
+    TabBarItem
   }
 }
+</script>
+
+<style scoped>
+@import './assets/css/base.css';
 </style>
+
+// 发现的问题 1、svg/png文件不能读取(路径前加~) 2、less不能使用
