@@ -1,7 +1,8 @@
 <template>
   <div id="app">
+    <router-view></router-view>
     <TabBar>
-      <TabBarItem>
+      <TabBarItem path="/home">
         <img slot="item_icon" src="~assets/images/tabbar/01.png" alt="" />
         <img
           slot="item_icon_active"
@@ -10,7 +11,7 @@
         />
         <div slot="item_text">首页</div>
       </TabBarItem>
-      <TabBarItem>
+      <TabBarItem path="/category">
         <img slot="item_icon" src="~assets/images/tabbar/03.png" alt="" />
         <img
           slot="item_icon_active"
@@ -19,7 +20,7 @@
         />
         <div slot="item_text">分类</div>
       </TabBarItem>
-      <TabBarItem>
+      <TabBarItem path="/cart">
         <img slot="item_icon" src="~assets/images/tabbar/05.png" alt="" />
         <img
           slot="item_icon_active"
@@ -28,7 +29,7 @@
         />
         <div slot="item_text">购物车</div>
       </TabBarItem>
-      <TabBarItem>
+      <TabBarItem path="/profile">
         <img slot="item_icon" src="~assets/images/tabbar/07.gif" alt="" />
         <img
           slot="item_icon_active"
@@ -57,5 +58,3 @@ export default {
 <style scoped>
 @import './assets/css/base.css';
 </style>
-
-// 发现的问题 1、svg/png文件不能读取(路径前加~) 2、less不能使用

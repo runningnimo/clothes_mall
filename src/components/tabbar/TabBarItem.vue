@@ -6,7 +6,7 @@
     <div v-else>
       <slot name="item_icon_active"></slot>
     </div>
-    <div class="{active:isActive}">
+    <div :class="{ active: isActive }">
       <slot name="item_text"></slot>
     </div>
   </div>
@@ -17,13 +17,32 @@ export default {
   name: 'TabBarItem',
   data() {
     return {
-      isActive: false
+      // isActive: false
     }
   },
-  props: {},
+  props: {
+    path: {
+      type: String,
+      default: ''
+    }
+  },
+  computed: {
+    isActive() {
+      // return this.$route.path.indexOf(this.path) !== -1
+      return this.$route.path === this.path
+    }
+  },
+
   methods: {
     itemClick() {
-      console.log(this, this._uid)
+      // if (this.$router.path === this.path) {
+      //   console.log(1111)
+      //   return
+      // }
+      // console.log(this.$route.path === this.path)
+      this.$router.replace(this.path).catch(() => {
+        console.log('重复点击！')
+      })
     }
   }
 }
