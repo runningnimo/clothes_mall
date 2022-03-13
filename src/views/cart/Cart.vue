@@ -1,5 +1,8 @@
 <template>
-  <div>cart1.2</div>
+  <div>
+    cart
+    <p>aaa</p>
+  </div>
 </template>
 
 <script>
