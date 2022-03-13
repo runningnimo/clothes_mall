@@ -3,6 +3,7 @@
     cart
     <p>aaa</p>
     <h1>hhh</h1>
+    <h2>nnn</h2>
   </div>
 </template>
 
